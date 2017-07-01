@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.2.6",
-  "description": "A sample Node.js app using Express 4",
+  "name": "weather-313",
+  "version": "0.1.0",
+  "description": "A simple weather app that uses multiple backends",
   "engines": {
     "node": "6.10.2"
   },
@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "client": " webpack --colors --watch",
-    "postinstall": "webpack -p"
+    "postinstall": "rm -rf ./dist; webpack -p"
   },
   "dependencies": {
     "babel-core": "^6.25.0",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/hillshum/cs313-weather"
   },
   "keywords": [
     "node",
