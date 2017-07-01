@@ -8,9 +8,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "client": " webpack --colors --watch"
+    "client": " webpack --colors --watch",
+    "postinstall": "webpack -p"
   },
   "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
     "ejs": "2.5.6",
     "express": "4.15.2",
     "react": "^15.6.1",
@@ -28,10 +33,4 @@
     "express"
   ],
   "license": "MIT",
-  "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.1",
-    "babel-preset-env": "^1.5.2",
-    "babel-preset-react": "^6.24.1"
-  }
 }
