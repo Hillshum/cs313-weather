@@ -1,4 +1,4 @@
-import './styles.css'
+import './styles.scss'
 import React from 'react'
 
 
@@ -29,12 +29,12 @@ class App extends React.Component {
 
   render () {
     return <div className="app">
+      <SearchForm onSearch={this.onSearch} />
       <div className="results-list">
         {this.state.results.map(result=>
           <ResultItem key={result.provider} result={result} />
         )}
       </div>
-        <SearchForm onSearch={this.onSearch} />
     </div>
   }
 }

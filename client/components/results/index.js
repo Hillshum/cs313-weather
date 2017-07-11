@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './styles.css'
+import './styles.scss'
 class Result extends React.Component {
 
   render () {

@@ -1,0 +1,37 @@
+$border-color: #9BC1BC;
+html {
+  background-color: #F4F1BB;
+}
+
+button {
+  background-color: $border-color;
+  color: #E6EBE0;
+  padding: 3px;
+  border-radius: 3px;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    border-style: none;
+  }
+
+}
+.app {
+  background-color: #E6EBE0;
+  color: #5CA4A9;
+  padding: 20px 5px; 
+  max-width: 600px;
+  margin: 0 auto;
+
+  border: 2px solid $border-color;
+  box-shadow: 2px;
+}
+.results-list {
+  height: 100%;
+  display: flex;
+  padding-top: 20px;
+  .results-item{
+   border : 2px solid $border-color;
+  }
+}
