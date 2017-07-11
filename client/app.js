@@ -20,7 +20,9 @@ class App extends React.Component {
 
   onSearch(query) {
     weatherQuery(query).then(resp=>{
-      this.setState({results: resp})
+      if (Array.isArray(resp)) {
+        this.setState({results: resp})
+      }
       console.log(resp)
     })
   }

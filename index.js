@@ -17,3 +17,9 @@ app.listen(app.get('port'), function() {
 });
 
 
+app.use((err, req, res, next) => {
+  console.log(err)
+  res.status(500)
+  res.json({error: "Something happened"})
+})
+
