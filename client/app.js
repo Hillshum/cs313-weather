@@ -29,6 +29,7 @@ class App extends React.Component {
 
   render () {
     return <div className="app">
+      <h1>Weather Info</h1>
       <SearchForm onSearch={this.onSearch} />
       <div className="results-list">
         {this.state.results.map(result=>
